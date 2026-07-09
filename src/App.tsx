@@ -1,4 +1,6 @@
 import Header from "./components/Header";
+import Hero from "./components/Hero";
+import AboutMe from "./components/AboutMe";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       {/* conteúdo */}
       <div className="relative z-10">
         <Header />
+        <Hero />
+        <AboutMe />
       </div>
 
     </div>
