@@ -5,11 +5,11 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
 function generateParticles(count: number) {
-  const positions = new Float32Array(count * 3);
+  const positions = new Float32Array(count * 10);
   for (let i = 0; i < count; i++) {
     positions[i * 3] = (Math.random() - 0.5) * 10;     // x
-    positions[i * 3 + 1] = (Math.random() - 0.5) * 10; // y
-    positions[i * 3 + 2] = (Math.random() - 0.5) * 10; // z
+    positions[i * 3 + 1] = (Math.random() - 0.7) * 8; // y
+    positions[i * 3 + 2] = (Math.random() - 0.7) * 10; // z
   }
   return positions;
 }
